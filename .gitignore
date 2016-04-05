@@ -154,3 +154,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/BookService/App_Data/BookServiceContext-20160404143201.mdf
+/BookService/App_Data/BookServiceContext-20160404143201_log.ldf
+/BookService/App_Data/BookServiceContext-20160405084603.mdf
+/BookService/App_Data/BookServiceContext-20160405084603_log.ldf
