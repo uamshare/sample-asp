@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using BookService.Models;
+//using System.Data.Entity.Include;
 
 namespace BookService.Controllers
 {
@@ -20,7 +21,9 @@ namespace BookService.Controllers
         // GET api/Books
         public IQueryable<Book> GetBooks()
         {
-            return db.Books;
+            return db.Books
+            // new code:
+            .Include(b => b.Author);
         }
 
         // GET api/Books/5
