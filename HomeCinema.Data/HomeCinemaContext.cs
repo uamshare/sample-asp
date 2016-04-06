@@ -1,20 +1,20 @@
-﻿using System;
+﻿using HomeCinema.Data.Configurations;
+using HomeCinema.Entities;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity.Validation;
-
-using HomeCinema.Data.Configurations;
-using HomeCinema.Entities;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HomeCinema.Data
 {
     public class HomeCinemaContext : DbContext
     {
-        public HomeCinemaContext() : base("HomeCinema")
+        public HomeCinemaContext()
+            : base("HomeCinema")
         {
             Database.SetInitializer<HomeCinemaContext>(null);
         }
